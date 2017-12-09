@@ -1,0 +1,85 @@
+#MainBody {
+	height: 900px;
+	width: 100%
+	border: solid black 1px;
+	/*background-image: url("");*/
+}
+#TriviaGameBox {
+	height: 100px;
+	width: 100%;
+	font-size: 36px;
+	color: black;
+	border: solid black 1px;
+	text-align: center;
+	line-height: 100%;
+	/*background-image: url("assets/images/whitehouse2.jpg");*/
+}
+#headerBox {
+	height: 100px;
+	width: 100%;
+	color: blue;
+	border: solid black 1px;
+	text-align: center;
+	/*background-image: url("assets/images/whitehouse2.jpg");*/
+}
+#usPresidentsBox {
+	margin-top: 25px;
+	float: left;
+	color: black;
+	border: solid black 1px;
+	line-height: 100%;
+	font-size: 44px;
+	text-align: center;
+	/*background-image: url("assets/images/whitehouse2.jpg");*/
+}
+#timerBox {
+	position: relative;
+	margin-top: 25px;
+	float: right;
+	color: black;
+	border: solid black 1px;
+	line-height: 100%;
+	font-size: 44px;
+	/*background-image: url("assets/images/whitehouse2.jpg");*/
+}
+#questionsBox {
+	clear: both;
+	height: 550px;
+	width: 100%;
+	color: red;
+	border: solid black 1px;
+	text-align: center;
+	line-height: 100%;
+	font-size: 36px;
+	/*background-image: url("");*/
+}
+h1 {
+	color: black;
+}
+#questionsList {
+	border: solid black 1px;
+}
+#restartButton {
+	color: black;
+	width: 25%;
+}
+#answer1 {
+	width: 90%;
+	padding: 5px;
+	color: blue;
+}
+#answer2 {
+	width: 90%;
+	padding: 5px;
+	color: blue;
+}
+#answer3 {
+	width: 90%;
+	padding: 5px;
+	color: blue;
+}
+#answer4 {
+	width: 90%;
+	padding: 5px;
+	color: blue;
+}
