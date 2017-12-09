@@ -3,23 +3,33 @@
 
 $(document).ready(function() {
 	
-	// Create an onclick event for when each answer button is clicked:
+	// Run a function (answerCheck) for when each button (answer1,answer2,etc)
+	// is clicked it will check the value (val) of the answer buttons
+	// with each correct answer (answerKey) in the question set
 
 	$("#answer1").on("click", submit);
 	$("#answer2").on("click", submit);
 	$("#answer3").on("click", submit);
 	$("#answer4").on("click", submit);
 
-// Create an array for the question set and their answers.
-// Need an object that holds the questions for each queston set.
+function answerCheck() {
 
-var questionSet = ["#answer1", "#answer2", "#answer3", "#answer4"]
+// if value of answer1 = value of answerKey1, then add HTML "You are correct"
+// in the ("#answerPrompt") div
+
+if (answer1 = answerKey1)
+	$("#answerPrompt").html
+
+// var questionSet = [questionSet1, questionSet2, questionSet3];
+
+var questionSet = ["#answer1", "#answer2", "#answer3", "#answer4"];
 
 console.log(questionSet);
 
 // Create an object for each set of questions and the corresponding answer choices:
 
 var question1 = "Who was the 8th President of the U.S.?";
+var answerKey1 = "Martin Van Buren";
 
 var questionSet1 = [
       answer1 = "Teddy Roosevelt",
@@ -28,7 +38,11 @@ var questionSet1 = [
       answer4 = "Martin Van Buren",
      ];
 
+console.log(questionSet1[2]);
+console.log(questionSet3[0]);
+
 var question2 = "Which president's birthday does not occur in February?";
+var answerKey2 = "John F. Kennedy";
 
 var questionSet2 = [
       answer1 = "Abraham Lincoln",
@@ -38,6 +52,7 @@ var questionSet2 = [
      ];
 
 var question3 = "Who was the youngest president to be elected?";
+var answerKey3 = "Teddy Roosevelt";
 
 var questionSet3 = [
       answer1 = "Barack Obama",
@@ -45,9 +60,9 @@ var questionSet3 = [
       answer3 = "Harry Truman",
       answer4 = "Teddy Roosevelt",
      ];
+ }
 
-console.log(questionSet1[2]);
-console.log(questionSet3[0]);
+
 
 
 var myVar = setInterval(function(){ myTimer() }, );
@@ -78,7 +93,7 @@ function submit() {
 
 // // Create a variable that holds the beginning time.
 
-	var number = 100;
+	var number = 2000;
 console.log (number);
 // // Create a variable to hold the interval ID when executing the "run" function
 
@@ -88,6 +103,7 @@ console.log (number);
 
 	function run() {
       intervalId = setInterval(decrement, 1000);
+      console.log (intervalId);
     }
 
      function decrement() {
@@ -117,7 +133,7 @@ console.log (number);
 
    function stop() {
 
-      //  Clears our intervalId
+      //  Clears the intervalId
       //  We just pass the name of the interval
       //  to the clearInterval function.
       clearInterval(intervalId);
